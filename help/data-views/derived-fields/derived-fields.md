@@ -900,7 +900,7 @@ Replaces a value from a field using a regular expression into a new derived fiel
 
 ## Use case {#regex-replace-uc}
 
-You would like to grab a potion of a URL and use that as a unique page identifier to analyze traffic. You use `[^/]+(?=/$|$)` for the regular expression to capture the end of the URL and `$1` as the output pattern.
+You would like to grab a potion of a URL and use that as a unique page identifier to analyze traffic. You use `[^\/]+(?=\/$|$)` for the regular expression to capture the end of the URL and `$1` as the output pattern.
 
 ### Data before {#regex-replace-uc-databefore}
 
@@ -915,7 +915,7 @@ You would like to grab a potion of a URL and use that as a unique page identifie
 
 ### Derived field {#regex-replace-uc-derivedfield}
 
-You create a `Page Identifier` derived field. You use the [!UICONTROL REGEX REPLACE] function to define a rule to replace value of the [!UICONTROL Referring URL] field using a [!UICONTROL Regex] of `[^/]+(?=/$|$)` and [!UICONTROL Output format] of `$1`.
+You create a `Page Identifier` derived field. You use the [!UICONTROL REGEX REPLACE] function to define a rule to replace value of the [!UICONTROL Referring URL] field using a [!UICONTROL Regex] of `[^\/]+(?=\/$|$)` and [!UICONTROL Output format] of `$1`.
 
 ![Screenshot of the Regex Replac rule](assets/regex-replace.png)
 
